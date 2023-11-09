@@ -1,0 +1,54 @@
+\documentclass[a4paper]{article}
+
+\begin{document}
+
+% render: lilypond-book --output=out --pdf armed_forces_medley.lytex
+
+
+Army
+
+\begin{lilypond}
+
+<<
+
+\new ChordNames {
+  \chordmode {
+  \set noChordSymbol = ""
+    \partial 2 r2 |
+    ees1 | ees | ees | ees |
+    ees | ees | aes2 ees |
+    bes1 | bes |
+  }
+}
+
+\new Staff  {
+    \relative c' {
+    \clef treble
+    \key ees \major
+    \time 4/4
+    \partial 2 ees4 g |
+    bes bes8 bes bes2( | bes4 ) g bes ees |
+    bes bes8 bes bes2( | bes4 ) g bes ees |
+    f g2 f8 g | aes2 g |
+    f2. f8 f | f4 f r2 |
+  }
+}
+>>
+
+\end{lilypond}
+
+Options are put in brackets.
+
+\begin{lilypond}[fragment,quote,staffsize=26,verbatim]
+  c'4 f16
+\end{lilypond}
+
+Larger examples can be put into a separate file, and introduced with
+\verb+\lilypondfile+.
+
+\lilypondfile[quote,noindent]{anahata_piece.ly}
+
+(If needed, replace @file{screech-and-boink.ly} by any @file{.ly} file
+you put in the same directory as this file.)
+
+\end{document}
