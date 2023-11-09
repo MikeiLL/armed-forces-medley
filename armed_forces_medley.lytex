@@ -1,5 +1,5 @@
 \documentclass[a4paper]{article}
-
+\newcommand\tab[1][1cm]{\hspace*{#1}}
 \begin{document}
 
 % render: lilypond-book --output=out --pdf armed_forces_medley.lytex
@@ -37,7 +37,25 @@ Army
 
 \end{lilypond}
 
-Options are put in brackets.
+% spacing https://tex.stackexchange.com/questions/198432/using-the-tab-command#208710
+
+\tab \tab E$\flat$ \\
+First to fight for the right, \\
+And to build the nation's might, \\
+\tab Fmin \tab $\>$ B$\flat$ \tab E$\flat$ \\
+And the army goes rolling along. \\
+ \\
+\tab \tab E$\flat$ \\
+Proud of all we have done, \\
+Fighting 'till the battle's won, \\
+\tab Fmin \tab $\>$ B$\flat$ \tab E$\flat$ \\
+And the army goes rolling along. \\
+
+For it's high high hey in the field artillery. \\
+Count with the cadence loud and strong: \\
+Two, three, four, hup, two, three... \\
+For where e'er we go you will always know \\
+That the Army Goes Rolling Along. \\
 
 \begin{lilypond}[fragment,quote,staffsize=26,verbatim]
   c'4 f16
