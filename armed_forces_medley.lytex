@@ -1,5 +1,7 @@
-\documentclass[a4paper]{article}
+\documentclass[letterpaper]{article}
+
 \newcommand\tab[1][1cm]{\hspace*{#1}}
+\usepackage[margin=0.5in]{geometry}
 \begin{document}
 
 % render: lilypond-book --output=out --pdf armed_forces_medley.lytex
@@ -18,7 +20,7 @@
     \partial 2 r2 |
     ees1 | ees | ees | ees |
     ees | ees | aes2 ees |
-    bes1 | bes |
+    bes1 |
   }
 }
 
@@ -40,6 +42,7 @@
 
 % spacing https://tex.stackexchange.com/questions/198432/using-the-tab-command#208710
 
+\hspace{10pt}
 
 \tab E$\flat$ \\
 First to fight for the right, \\
@@ -89,6 +92,7 @@ That the Army Goes Rolling Along. \\
 
 \end{lilypond}
 
+\hspace{10pt}
 
 C \tab Amin \tab C \tab G \tab C \\
 Anchors aweigh, my boys. Anchors aweigh! \\
@@ -132,7 +136,7 @@ Here's wishing you a happy voyage home. \\
 
 \end{lilypond}
 
-
+\hspace{10pt}
 
 F \\
 We're always ready for the call. \\
@@ -179,7 +183,7 @@ Aye! Coast Guard we fight for you.
 
 \end{lilypond}
 
-
+\hspace{10pt}
 
 C \\
 Off we go into the wild blue yonder, \\
@@ -187,7 +191,7 @@ F \tab \tab \tab C \\
 Climbing high into the sun. \\
 C \\
 Here they come, zooming to meet our thunder, \\
-G/D \tab D \tab G \\
+G/D \tab D \tab \tab G \\
 At 'em, boys, give 'em the gun! \\
 C \\
 Down we dive, spouting our flame from under. \\
@@ -224,7 +228,7 @@ For nothing can stop the US Air Force!
 
 \end{lilypond}
 
-
+\hspace{10pt}
 
 \tab E$\flat$ \tab B$\flat$/F B$\flat$ E$\flat$ B$\flat$/F B$\flat$ \\
 From the halls of Mon - te - zu - ma, \\
