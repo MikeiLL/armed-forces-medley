@@ -4,8 +4,9 @@
 
 % render: lilypond-book --output=out --pdf armed_forces_medley.lytex
 
+\begin{large}
 
-Army
+\section{Army}
 
 \begin{lilypond}
 
@@ -39,34 +40,208 @@ Army
 
 % spacing https://tex.stackexchange.com/questions/198432/using-the-tab-command#208710
 
-\tab \tab E$\flat$ \\
+
+\tab E$\flat$ \\
 First to fight for the right, \\
 And to build the nation's might, \\
 \tab Fmin \tab $\>$ B$\flat$ \tab E$\flat$ \\
 And the army goes rolling along. \\
  \\
-\tab \tab E$\flat$ \\
+\tab E$\flat$ \\
 Proud of all we have done, \\
 Fighting 'till the battle's won, \\
 \tab Fmin \tab $\>$ B$\flat$ \tab E$\flat$ \\
 And the army goes rolling along. \\
 
+\tab E$\flat$ A$\flat$ E$\flat$ \tab A$\flat$ E$\flat$ \\
 For it's high high hey in the field artillery. \\
+Fmin \tab \tab \tab \tab B$\flat$min \\
 Count with the cadence loud and strong: \\
+\\
 Two, three, four, hup, two, three... \\
+\tab \tab E$\flat$ \tab G \tab A$\flat$ \tab E$\flat$ \\
 For where e'er we go you will always know \\
+\tab Fmin \tab B$\flat$ \tab E$\flat$ \\
 That the Army Goes Rolling Along. \\
 
-\begin{lilypond}[fragment,quote,staffsize=26,verbatim]
-  c'4 f16
+\section{Navy}
+
+\begin{lilypond}
+
+<<
+
+\new ChordNames {
+  \chordmode {
+  \set noChordSymbol = ""
+  ees1 | d:m | d:m7 | g:7
+  }
+}
+
+\new Staff  {
+    \relative c, {
+    \clef bass
+    \key c \major
+    \time 4/4
+    r4. ees8 ees ees ees ees | f4 f2. | f4 f2 f4 | g1 |
+  }
+}
+>>
+
 \end{lilypond}
 
-Larger examples can be put into a separate file, and introduced with
-\verb+\lilypondfile+.
 
-\lilypondfile[quote,noindent]{anahata_piece.ly}
+C \tab A min \tab C \tab G \tab C \\
+Anchors aweigh, my boys. Anchors aweigh! \\
+F \tab C \tab \\
+Farewell to college joys \\
+\tab D7 \tab \tab G7 \\
+We sale at break of day, day, day, day. \\
 
-(If needed, replace @file{screech-and-boink.ly} by any @file{.ly} file
-you put in the same directory as this file.)
+C \tab \tab Amin \tab C $\>$ G \tab C \\
+Through our last night ashore, Hail to the foam. \\
+F \tab C \tab \\
+Until we meet once more \\
+\tab D7 \tab \tab G7 \tab C \\
+Here's wishing you a happy voyage home. \\
 
+
+\section{Coast Guard}
+
+\begin{lilypond}
+
+<<
+
+\new ChordNames {
+  \chordmode {
+  \set noChordSymbol = ""
+  r4.
+  bes1 | a | aes | c:7 |
+  }
+}
+
+\new Staff  {
+    \relative c' {
+    \clef treble
+    \key c \major
+    \time 4/4
+    \partial 4. c8 c c |
+    e4 e2 e8 e | f4 f2 f8 f | d4 e f d | g g8 g g4 r |
+  }
+}
+>>
+
+\end{lilypond}
+
+
+
+F \\
+We're always ready for the call. \\
+\tab B$\flat$ \tab \tab F \\
+We place our trust in thee. \\
+\tab Gmin \tab C \tab F \tab Dmin \\
+Through surf and storm and howling gale, \\
+\tab Gmin \tab G7 \tab C7 \\
+How shall our purpose be? \\
+
+F \\
+Semper paratus is our guide. \\
+\tab B$\flat$ \tab \tab F \\
+Our pledge, our motto, too. \\
+\tab Gmin $\>$ C \tab F $\>$ Dmin \\
+We're always ready, do or die! \\
+\tab F \tab \tab C7 \tab F \\
+Aye! Coast Guard we fight for you.
+
+\section{Air Force}
+
+\begin{lilypond}
+
+<<
+
+\new ChordNames {
+  \chordmode {
+  \set noChordSymbol = ""
+  r2. |
+  ees:9 | c | a | g:7 |
+  }
+}
+
+\new Staff  {
+    \relative c, {
+    \clef bass
+    \key c \major
+    \time 6/8
+    r4. ees8 ees ees | e4. r8 e e | fis4. r8 fis fis |
+    fis4. r8 fis fis | g g g r4. |
+  }
+}
+>>
+
+\end{lilypond}
+
+
+
+C \\
+Off we go into the wild blue yonder, \\
+F \tab \tab \tab C \\
+Climbing high into the sun. \\
+C \\
+Here they come, zooming to meet our thunder, \\
+G/D \tab D \tab G \\
+At 'em, boys, give 'em the gun! \\
+C \\
+Down we dive, spouting our flame from under. \\
+F \tab \tab \tab E7 \\
+Off with one terrible roar! \\
+\tab Amin \tab A7/G \tab D/F$\sharp$ F7 \\
+We live in fame or go down in flame, \\
+\tab C/G \tab G \tab C \\
+For nothing can stop the US Air Force!
+
+\section{Marines}
+
+\begin{lilypond}
+
+<<
+
+\new ChordNames {
+  \chordmode {
+  \set noChordSymbol = ""
+  }
+}
+
+\new Staff  {
+    \relative c' {
+    \clef treble
+    \key ees \major
+    \time 4/4
+    \partial 4 bes |
+    ees4. bes8 bes4 ees | e4. c8 c4 ees |
+    aes g f ees | f8 f4 f16 f bes4 r |
+  }
+}
+>>
+
+\end{lilypond}
+
+
+
+\tab E$\flat$ \tab B$\flat$/F B$\flat$ E$\flat$ B$\flat$/F B$\flat$ \\
+From the halls of Mon - te - zu - ma, \\
+E$\flat$ \tab B$\flat$/F B$\flat$ E$\flat$ C/E B$\flat$/F B$\flat$ \\
+To the shores of Tripoli, \\
+\tab E$\flat$ \tab B$\flat$/F B$\flat$ E$\flat$ B$\flat$/F B$\flat$ \\
+We will fight out countries battles \\
+E$\flat$ \tab B$\flat$/F B$\flat$ E$\flat$ C/E B$\flat$/F B$\flat$ \\
+In the air on land and sea. \\
+ \\
+\tab A$\flat$ \tab E$\flat$ \\
+First we fight for right and freedom, \\
+\tab A$\flat$ \tab E$\flat$ \\
+And to keep our honor clean. \\
+\tab E$\flat$ \tab \tab E$\flat$ D C C$\flat$ \\
+We are proud to claim the title, \\
+\tab B$\flat$ \tab \tab E$\flat$ \\
+Of United States Marines \\
+\end{large}
 \end{document}
