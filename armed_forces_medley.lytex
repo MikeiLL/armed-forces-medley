@@ -175,7 +175,7 @@ Aye! Coast Guard we fight for you.
     \clef bass
     \key c \major
     \time 6/8
-    r4. ees8 ees ees | e4. r8 e e | fis4. r8 fis fis |
+    r4. f8 f f | f4. r8 f f | fis4. r8 fis fis |
     fis4. r8 fis fis | g g g r4. |
   }
 }
